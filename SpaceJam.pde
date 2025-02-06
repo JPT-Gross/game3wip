@@ -1,15 +1,21 @@
+Config config;
+Splash splash;
+
 void settings() {
     fullScreen();
 }
 
 void setup() {
-    Config config = new Config();
-    surface.setSize(1920, 1080);
+    config = new Config();
+    splash = new Splash();
+    splash.preload();
+    surface.setSize(config.windowWidth, config.windowHeight);
     //surface.setLocation(0, 0);
 }
 
 void draw() {
     //TODO pull the SplashScreen class and display
-    
+    background(255);
+    splash.display();
     //TODO pull the MainMenu class and display
 }

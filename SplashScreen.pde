@@ -6,7 +6,7 @@ class Splash {
         startTime = millis();
     }
         
-        voidpreload() {
+        void preload() {
             this.img = loadImage("r.png"); // Fixed image path
         }
             
